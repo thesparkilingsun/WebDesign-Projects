@@ -1,0 +1,19 @@
+body { background-color: #9cb8b3; }
+
+
+.parallax {
+  background-image: url("../_images/landscape.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+.block{
+	color:
+#001440;
+	font-size: 2em;
+	width: 620px;
+	margin: 0 auto;
+
+}
