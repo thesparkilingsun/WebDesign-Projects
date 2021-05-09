@@ -1,0 +1,31 @@
+/* stylesheets */
+body 
+{
+   background-color: #ebebeb;	
+   font-family: "Helvetica", Arial, sans-serif;
+}
+
+ 
+a{
+	height:auto;
+	text-decoration: none;
+	 
+	 
+}
+a:hover{
+	color:white;
+}
+
+#container {
+	
+	 background-color:#F9BA89;
+	 margin: 0px auto;
+	 width: 600px;
+	 height: auto;
+	 border-radius: 15px;
+}
+
+h1 {
+	text-align: center;
+	
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- for special characters -->
+		<meta charset="utf-8">
+		<title>Web Safe Images</title>
+		<!-- link to exteral styles -->
+		<link rel="stylesheet" type="text/css" href="_css/styles.css">
+		<style type="text/css">
+		
+		body 
+       {
+          background-color: #ebebeb;	
+         font-family: "Helvetica", Arial, sans-serif;
+       }
+	   
+	    #container{
+		   background-color: #ffffff;
+		   width: 900px;
+		   padding: 20px 30 px;
+		   margin-left: auto;
+		   margin-right: auto;
+		   border-radius: 15px;
+		   box-shadow: 0px 0px 3px #cccccc;
+		
+		
+		}
+	   
+	   
+			#navbar{ 
+			   background-color:orange;
+				width: 900px;
+				padding: 20px 20px;
+				height:auto;
+			   margin: 0px auto;
+				border-radius: 15px;
+				box-shadow: 0px 0px 3px #cccccc;
+				text-align:center;
+				font-size: 40px;
+   }
+   
+      .cf
+	  {
+	     display:flex;
+		 flex-wrap: wrap;
+		 margin-top: 15px;
+		 padding: 0 4px;
+		 border: 3px solid black;
+		 background-image: linear-gradient(to bottom right, red, orange);
+	  
+	  }
+	  .floatMe{
+	  
+	       flex: 100%;
+		   margin: 15px auto;
+           max-width: 35%;
+		   border-radius: 10px;
+		   box-shadow: 1px 1.5px 2.3px #cccccc;
+	  }
+	  
+	 
+	  .floatMe img {
+		  margin-top: 8px;
+		  vertical-align: middle;
+		  width: 100%;
+			  
+	  }
+	  
+	 h2 {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 1px 2px rgba(black,.15);
+}
+
+  p{
+  margin: 0 20px 20px;
+  font-size: 16px;
+  line-height: 1.5em;
+  
+  color: lighten(black,20%);
+}
+
+
+	 
+	  
+	  
+		</style>
+	</head>
+	<body id = "container">
+	   <nav id= "navbar">
+     
+	   <a href="#jpg">JPG</a>
+	   <a href="#gif">GIF</a>
+	   <a href="#png8">PNG-8</a>
+	   <a href="#png24">PNG-24</a>
+	   <a href="#svg">SVG</a>
+	
+   </nav>
+	
+	 <article >
+	  <div class="cf">
+	    <div class="floatMe">
+		<!-- jpg -->
+		  <h2 class="brace" id="jpg">JPG</h2></a>
+		   <img src="_images/JPEG.JPG" alt="" width="370" height="250" >
+		   <p>JPEG is a commonly used method of lossy compression for digital images, particularly for those images produced by digital photography. The degree of compression can be adjusted, allowing a selectable tradeoff between storage size and image quality. JPEG typically achieves 10:1 compression with little perceptible loss in image quality.</p>
+		 </div>
+		 
+		  <div class="floatMe">
+		<!-- gif -->
+		<h2 id="gif">GIF</h2>
+		 <img src="_images/create.GIF" alt="" width="370" height="250">
+		<p>The Graphics Interchange Format (better known by its acronym GIF /ˈdʒɪf/ jif or /ˈɡɪf/ ghif) is a bitmap image format that was introduced by CompuServe in 1987[1] and has since come into widespread usage on the World Wide Web due to its wide support and portability.</p>
+		</div>
+		
+		 <div class="floatMe">
+		<!-- png-8 -->
+		<h2 id="png8">PNG-8</h2>
+		 <img src="_images/png8.PNG" alt="" width="370" height="250" >
+		<p>PNG-8 refers to palette variant, which supports only 256 colors, but is usually smaller in size. PNG-8 can be a GIF substitute.</p>
+		</div>
+		 <div class="floatMe">
+		<!-- png-24 -->
+		<h2 id="png24">PNG-24</h2>
+		 <img src="_images/png-24.PNG" alt="" width="370" height="250" >
+		<p>PNG-24 refers to true color variant, which supports more colors, but might be bigger. PNG-24 can be used instead of JPEG, if lossless image format is needed.</p>
+		</div>
+		<!-- svg -->
+		 <div class="floatMe">
+		 <div id="svg">
+		  
+		<h2>SVG</h2>
+		<img src="_images/svg1.SVG" alt="" width="370" height="250" >
+		<p>Scalable Vector Graphics (SVG) is an XML-based vector image format for two-dimensional graphics with support for interactivity and animation. The SVG specification is an open standard developed by the World Wide Web Consortium (W3C) since 1999.</p>
+	     </div>
+		 </div>
+	 </div>
+	  </article>
+	</body>
+	
+</html>
