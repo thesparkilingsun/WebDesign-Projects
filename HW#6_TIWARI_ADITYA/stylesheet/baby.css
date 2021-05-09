@@ -1,0 +1,245 @@
+/* Dummy CSS code*/
+
+*{
+	padding :0;
+	margin:0;
+}
+
+body
+{
+   background-color: #fff;
+   font-family: 'Love Ya Like A Sister', 'Henny Penny';
+}
+
+#wrapper{
+	 width:850px;
+	margin:1em auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: #fff; /*Tint of pink */
+}
+
+.row{
+	display: flex;
+}
+
+.col{
+	background-color: #fff;
+	padding:10px 1%;
+	margin:10px 1%;
+	flex-grow:1;
+}
+
+.onefifth{
+	flex-basis:18%;
+	flex-grow:0;
+}
+.twofifth{
+	flex-basis:38%;
+	flex-grow:0;
+}
+.threefifth{
+	flex-basis:58%;
+	flex-grow:0;
+}
+.fourfifth{
+	flex-basis:78%;
+	flex-grow:0;
+}
+.center 
+{
+	text-align: center;
+}
+
+.imgSizer{
+	border-radius: 75%;
+    background-color: #ff9dab;
+}
+
+h1{
+	text-align: center;
+	font-family:'Love Ya Like A Sister';
+	background-color:#ffb6c1;
+    font-size:2em;
+    color:#000;
+    font-weight: 100;
+    padding:0.4em;
+	
+}
+
+
+.align{
+	align-self: center;
+}
+
+.row ul{
+   list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+
+nav li{
+	margin:0.3em;
+	padding:0.12em;
+	display: block;
+    text-align: center;
+	position: relative;
+    
+}
+
+nav{
+    padding: 0.2em;
+    background-color:#F8F8FF;
+    
+}
+
+nav a{
+	text-transform: uppercase;
+    background-color:#F5F5F5;
+    padding: 0.2em;
+    margin:0.3em;
+    color: #000;
+    font-weight: 200;
+    transition: all 0.4s ease 0s;
+
+}
+
+
+
+nav a:hover {
+   color:#ff8397;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+}
+
+
+
+nav a:hover:after{
+	width: 55%;
+}
+
+
+i{
+    display: block;
+    font-family: 'Henny Penny';
+    padding: 0;
+    width:fit-content;
+    font-size: 1.45em;
+    color:#ff8397;
+    
+}
+span{
+    font-family: 'Love Ya Like a Sister';
+    font-size:1.1em;
+    display: inline-block;
+    color:#ff6a80;
+    font-weight: 1000;
+}
+
+h2{
+    font-size:1.675em;
+    font-weight: 200;
+    background-color:#ffc4cd;
+    color:#000;
+    width:fit-content;
+    margin: 0 auto;
+    padding-top: 0.45em;
+    padding-bottom: 0.45em;
+    padding-left: 0.8em;
+     padding-right: 0.8em;
+}
+.row1{
+   
+    margin: 0 auto;
+    padding:0.2em;
+}
+
+.span1
+{
+    font-family: 'Henny Penny';
+    color:#000;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+.color{
+    background-color:#ffdae0;
+    font-weight: 180;
+}
+
+.content{
+    justify-content: flex-end;
+    padding: 0.2em;
+    margin-right:0.2em;
+}
+.footer li{
+    display:inline-block;
+    font-family: 'Henny Penny';
+    font-size: 0.813em;
+    margin-left:5em;
+    margin-right: 5em;  
+    position: relative;
+}
+
+.footer a:hover{
+    color:#ff8397;;
+}
+
+.footer li a:before{
+    content:'';
+    display:block;
+    height:5px;
+    width:0;
+    background-color: #ff5671;
+    position: absolute;
+    top: -10px;
+    transition: all ease-in-out 300ms;
+}
+.footer li a:hover:before{
+    width: 100%;
+
+}
+.footer a{
+    color:#000;
+}
+.footer{
+    background-color:#ffe1e6;
+}
+.color1{
+    background-color:#fff;
+}
+
+.button{
+color: #000;
+text-transform: uppercase;
+text-decoration: none;
+ font-size: 1.3em;
+background: #ffbdc7;
+padding: 20px;
+border-radius: 50px;
+display: inline-block;
+border: none;
+transition: all 0.4s ease 0s;
+}
+
+.button a{
+    color:#000;
+    font-weight:300;
+    font-family: 'Henny Penny';
+}
+
+.button:hover{
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+}
+
+q{
+    font-family: 'Henny Penny';
+    font-weight: 200;
+}
+
+cite{
+    font-family:'Love Ya Like A Sister';
+    font-weight: 100;
+}
