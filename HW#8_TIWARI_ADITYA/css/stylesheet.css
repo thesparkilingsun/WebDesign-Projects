@@ -1,0 +1,276 @@
+@import url(font/stylesheet.css);
+
+body {
+  position: relative;
+  margin: 50px;
+  margin: 0;
+  padding: 100px;
+  background-image: url('../images/background.jpg');
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  margin: 80px auto;
+  max-width: 850px;
+  background: rgba(242, 232, 214, 0.73);
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  flex-grow: 1;
+  margin: 5px 2%;
+  padding: 5px 2%;
+}
+
+.oneFifth {
+  flex-grow: 0;
+  width: 16%;
+}
+
+.twoFifth {
+  flex-grow: 0;
+  width: 36%;
+}
+
+.threeFifth {
+  flex-grow: 0;
+  width: 56%;
+}
+
+.fourFifth {
+  flex-grow: 0;
+  width: 76%;
+}
+
+/* Navigation Here*/
+nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+ul {
+  margin: 0 auto;
+  list-style: none;
+  text-align: center;
+}
+
+li {
+  display: inline-flex;
+  margin-right: 16px;
+  margin-left: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.color {
+  background-color: #723f5f;
+}
+
+nav a {
+  position: relative;
+  display: inline-block;
+  margin: 15px 25px;
+  outline: none;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 1.35em;
+}
+
+nav a:hover,
+nav a:focus {
+  outline: none;
+}
+
+.effect a::before,
+.effect a::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  content: '';
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  -webkit-transform: translateX(-50%) translateY(-50%) scale(0.2);
+  -moz-transform: translateX(-50%) translateY(-50%) scale(0.2);
+  transform: translateX(-50%) translateY(-50%) scale(0.2);
+}
+
+.effect a::after {
+  width: 90px;
+  height: 90px;
+  border-width: 6px;
+  -webkit-transform: translateX(-50%) translateY(-50%) scale(0.8);
+  -moz-transform: translateX(-50%) translateY(-50%) scale(0.8);
+  transform: translateX(-50%) translateY(-50%) scale(0.8);
+}
+
+.effect a:hover::before,
+.effect a:hover::after,
+.effect a:focus::before,
+.effect a:focus::after {
+  opacity: 1;
+  -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+  -moz-transform: translateX(-50%) translateY(-50%) scale(1);
+  transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+/* Footer Styling */
+footer {
+  position: fixed;
+  bottom: 0px;
+  background-color: #bebcb5;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+.effect-1 a {
+  color: rgba(4, 4, 4, 0.2);
+  text-decoration: none;
+  text-shadow: none;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.effect-1 a::before {
+  position: absolute;
+  color: #7235f4;
+  content: attr(data-hover);
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.effect-1 a:hover::before,
+.effect-1 a:focus::before {
+  opacity: 0.1s;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.center {
+  text-align: center;
+}
+
+img {
+  opacity: 1;
+  max-width: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+h1, h2, a, span, p {
+  font-family: 'Bitter', serif;
+}
+
+h1 {
+  font-size: 1.75em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h1, h2 {
+  color: #804e6d;
+  text-transform: uppercase;
+}
+
+a, p, span {
+  color: rgba(114, 63, 95, 0.9);
+  font-size: 1em;
+}
+
+/* This will go in col */
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 0%;
+  left: 5%;
+  width: 80%;
+  overflow: hidden;
+}
+
+.info {
+  position: relative;
+  width: : 100%;
+}
+
+.info:hover img {
+  opacity: 0.3;
+  overflow: hidden;
+}
+
+.info:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #c7cdc7;
+  color: #000000;
+  font-size: .45em;
+  padding: 16px 32px;
+}
+
+/*This will be for the text I put inside */
+@media only screen and (max-width:580px) {
+  .oneThird {
+    flex-grow: 0;
+    width: 29.33%;
+  }
+
+  .text {
+    font-size: .25em;
+  }
+
+  p {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .twoThird {
+    flex-grow: 0;
+    width: 62.66%;
+  }
+
+  .col {
+    flex-grow: 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:380px) {
+  .row {
+    flex-wrap: wrap;
+  }
+
+  .text {
+    font-size: 12px;
+    padding: 0px;
+  }
+
+  .col {
+    flex-grow: 0;
+    width: 100%;
+  }
+}
